@@ -31,11 +31,8 @@ def Dequantize(feat_vector, max_quantized_value=2, min_quantized_value=-2):
   Returns:
     A float vector which has the same shape as feat_vector.
   """
-  assert max_quantized_value > min_quantized_value
-  quantized_range = max_quantized_value - min_quantized_value
-  scalar = quantized_range / 255.0
-  bias = (quantized_range / 512.0) + min_quantized_value
-  return feat_vector * scalar + bias
+
+  return feat_vector
 
 
 def MakeSummary(name, value):
