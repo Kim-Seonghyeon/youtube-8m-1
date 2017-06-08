@@ -120,7 +120,7 @@ def inference(reader, train_dir, data_pattern, out_file_location, batch_size, to
         video_id_batch_val_tot = []
         video_batch_30_val_tot = []
         labels_val_tot = []
-        for i in range(8):
+        for i in range(32):
           video_batch_30_val, video_id_batch_val, video_batch_val,num_frames_batch_val, labels_val = sess.run([video_batch_30, video_id_batch, video_batch, num_frames_batch, label_batch])
           video_batch_30_val_tot.append(video_batch_30_val)
           video_id_batch_val_tot.append(video_id_batch_val)
