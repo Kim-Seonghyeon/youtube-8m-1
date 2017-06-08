@@ -38,7 +38,7 @@ def EqualSpaceMeans(model_input, num_frames, num_samples):
   index = tf.stack([batch_index, frame_index], 2)
   model_input = tf.gather_nd(model_input, index)
 
-  return [tf.reduce_sum(tf.stack(tf.split(model_input,num_samples, 1), 1), 2),frame_index]
+  return tf.reduce_sum(tf.stack(tf.split(model_input,num_samples, 1), 1), 2)
 
 
 
