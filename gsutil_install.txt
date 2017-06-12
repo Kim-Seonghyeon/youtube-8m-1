@@ -15,5 +15,4 @@ gsutil -m cp gs://ksh_extract_frame/validate/label/label* ./validate/label/
 gsutil -m cp gs://ksh_extract_frame/validate/feature/feature* ./validate/feature/
 
 gsutil -m cp gs://ksh_extract_frame/test/id/id* ./test/id/
-gsutil -m cp gs://ksh_extract_frame/test/label/label* ./test/label/
 gsutil -m cp gs://ksh_extract_frame/test/feature/feature* ./test/feature/
